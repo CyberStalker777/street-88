@@ -1,0 +1,191 @@
+@media (max-width: 1200px){
+    .container{
+        max-width: 960px;
+    }
+
+    .burger__items{
+        grid-template-columns: minmax(290px, 370px) minmax(290px, 370px);
+        grid-template-rows: repeat(4, 524px);
+    
+        grid-template-areas: 'one two' 
+                             'three four'
+                             'five six' 
+                             'sevn night';
+
+        justify-content: center;
+    }
+
+
+
+}
+@media (max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+
+    .nav__btn span{
+        display: flex;
+        z-index: 4;
+    }
+
+    .nav__btn:focus~.nav__list{
+        top: 0;
+    } 
+
+    .nav__list{
+        position: absolute;
+        flex-direction: column;
+        text-align: center;
+        left: 50%;
+        top: -600%;
+        transform: translate(-50%);
+        background: #292929;
+        box-shadow: 0px 1px 8px rgba(17, 17, 17, 0.3);
+        width: 100%;
+        z-index: 3;
+        transition: 1s linear;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .header__content h1{
+        font-size: 65px;
+        line-height: 85px;
+    }
+
+    .beef{
+       font-size: 29px;
+       line-height: 12px; 
+    }
+
+    .price{
+        padding: 25px 70px;
+    }
+
+    .header__content_btns a{
+        padding: 10px 65px;
+        font-size: 15px;
+    }
+
+    .header__content p{
+        font-size: 15px;
+    }
+
+    .section2 h2{
+        font-size: 45px;
+    }
+}
+@media (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+
+    .header__content h1{
+        font-size: 50px;
+        line-height: 80px;
+        text-align: center;
+    }
+
+    .beef{
+       font-size: 28px;
+       line-height: 10px; 
+       text-align: center;
+    }
+
+    .header__content p{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .price{
+        padding: 20px 65px;
+    }
+
+
+    .header__content_btns a{
+        padding: 8px 62px;
+        font-size: 15px;
+    }
+
+    .section2 h2{
+        font-size: 45px;
+    }
+}
+@media (max-width: 576px){
+    .container{
+        max-width: 100%;
+    }
+
+    .nav__content{
+        padding: 6px 15px;
+    }
+    
+    .nav__top_content{
+        padding: 15px 15px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav__top_list_link a{
+        font-size: 15px;
+    }
+
+    .nav__top_list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__contact{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__about p{
+        font-size: 14px;
+    }
+
+    .logo{
+        font-size: 25px;
+        padding: 8px 13px;
+    }
+
+    .header__content_btns{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section1__list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+    .burger__items{
+        grid-template-columns: minmax(290px, 370px);
+        grid-template-rows: repeat(8, 524px);
+    
+        grid-template-areas: 'one' 
+                             'two' 
+                             'three' 
+                             'four'
+                             'five' 
+                             'six' 
+                             'sevn' 
+                             'night';
+    }
+
+    .section2{
+        margin-top: 20px;
+    }
+
+    .section2 h2{
+        font-size: 30px;
+        padding: 10px 0px;
+    }
+
+    .section1__list_link a{
+        font-size: 13px;
+    }
+}
